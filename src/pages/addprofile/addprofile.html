@@ -1,0 +1,83 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Add Details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<img src="assets/imgs/add-user-button.png" background= "basic" height=70 width=70 class=page-avatar/>
+
+<ion-fab top right edge>
+  <button ion-fab mini (click)="showMenu()">
+    <ion-icon name="menu"></ion-icon>
+  </button>
+</ion-fab>
+<div class="listditails">
+  <ion-list insert>
+      <ion-item>
+        <ion-label fixed color="basic" >Name: 
+        </ion-label>
+        <ion-input type = "text" [(ngModel)]="name"placeholder = "Enter name">
+        </ion-input>
+      </ion-item>
+    <ion-item>
+      <ion-label fixed>Phone Number:
+      </ion-label>
+      <ion-input type="number" [(ngModel)]="phone" placeholder="0000-000-000">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Postal Adress:
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="address" placeholder="                              P.O Box .....">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Residential Adress:
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="residence" placeholder="                                       Enter house adress">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Relation :
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="relation" placeholder="How are you related">
+      </ion-input>
+    </ion-item>
+      <ion-label floating>Detailed Description:
+      </ion-label><br><br>
+      <ion-item text wrap>
+      <ion-textarea type="text" [(ngModel)]="detail" placeholder="Write details of profile" rows ="3" maxlength ="500" >
+      </ion-textarea>
+    </ion-item>
+  </ion-list>
+</div>
+
+<div class="pic-buttons">
+  <button ion-button icon-left outline round>
+    <ion-icon name="camera"></ion-icon>
+    Capture
+  </button>
+  <button ion-button icon-left outline round>
+    <ion-icon name="folder" ></ion-icon>
+    Select
+  </button>
+</div>
+<br>
+
+<div class="pic-buttons">
+<button ion-button large>
+  <ion-icon name="add-circle" (click)="save()"></ion-icon>
+    Add 
+</button>
+<button ion-button large icon-right (click)="allProfiles()">
+  <ion-icon name="add-circle"></ion-icon>
+   All
+</button>
+</div>
+
+</ion-content>
