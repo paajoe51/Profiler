@@ -19,6 +19,8 @@ export class AllprofilesPage {
   profiles: any[] = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams,private storage:Storage) {
+
+    this.allMembers();
   }
 
   ionViewDidLoad() {
