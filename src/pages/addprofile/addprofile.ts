@@ -19,7 +19,7 @@ import { Storage } from '@ionic/storage';
 export class AddprofilePage {
   name:any;
   phone:number;
-  address:any;
+  zaddress:any;
   residence:any;
   relation:any;
   detail:any;

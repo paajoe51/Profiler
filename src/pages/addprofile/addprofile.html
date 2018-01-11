@@ -21,7 +21,7 @@
       <ion-item>
         <ion-label fixed color="basic" >Name: 
         </ion-label>
-        <ion-input type = "text" [(ngModel)]="name"placeholder = "Enter name">
+        <ion-input  [(ngModel)]="name" type = "text"placeholder="Enter name">
         </ion-input>
       </ion-item>
     <ion-item>
@@ -33,29 +33,43 @@
     <ion-item>
       <ion-label floating>Postal Adress:
       </ion-label>
-      <ion-input type="text" [(ngModel)]="address" placeholder="                              P.O Box .....">
+      <ion-input type="text" placeholder="                              P.O Box .....">
       </ion-input>
     </ion-item>
     <ion-item>
       <ion-label floating>Residential Adress:
       </ion-label>
-      <ion-input type="text" [(ngModel)]="residence" placeholder="                                       Enter house adress">
+      <ion-input type="text" placeholder="                                       Enter house adress">
       </ion-input>
     </ion-item>
-    <ion-item>
-      <ion-label>Relation :
-      </ion-label>
-      <ion-input type="text" [(ngModel)]="relation" placeholder="How are you related">
-      </ion-input>
-    </ion-item>
-      <ion-label floating>Detailed Description:
-      </ion-label><br><br>
-      <ion-item text wrap>
-      <ion-textarea type="text" [(ngModel)]="detail" placeholder="Write details of profile" rows ="3" maxlength ="500" >
-      </ion-textarea>
-    </ion-item>
+      <ion-item>
+        <ion-label>Relation :
+        </ion-label>
+        <ion-input type="text" placeholder="How are you related">
+        </ion-input>
+      </ion-item>
+        <ion-label floating>Detailed Description:
+        </ion-label><br><br>
+        <ion-item text wrap>
+        <ion-textarea type="text" placeholder="Write details of profile" rows ="3" maxlength ="500" >
+        </ion-textarea>
+      </ion-item>
   </ion-list>
 </div>
+
+<ion-content>
+  <!-- Real floating action button, fixed. It will not scroll with the content -->
+  <ion-fab top right edge>
+    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list>
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>
 
 <div class="pic-buttons">
   <button ion-button icon-left outline round>
