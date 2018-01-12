@@ -34,6 +34,8 @@ export class AllprofilesPage {
     this.storage.ready().then(() =>{
       this.storage.forEach((value)=>{
         this.profiles.push(value);
+
+        alert("Fetch done");
       })
     }).catch();
     console.log(this.profiles);
