@@ -19,7 +19,7 @@ import { Storage } from '@ionic/storage';
 export class AddprofilePage {
   name:any;
   phone:number;
-  zaddress:any;
+  address:any;
   residence:any;
   relation:any;
   detail:any;
@@ -40,7 +40,7 @@ export class AddprofilePage {
   }
 
   save() {
-    let member = {
+    let profiles={
       name: this.name,
       phone: this.phone,
       address: this.address,
@@ -49,21 +49,22 @@ export class AddprofilePage {
       detail: this.detail
     }
     let id = this.magicNumbers();
-    this.storage.set('sandwich' + id, member).then(() => {
+    this.storage.set('sandwich'+id,profiles).then(()=>{
       alert("Datasaved");
-    }).catch((error) => {
+    }).catch((error)=>{
       console.log(error);
+
     });
-     this.name = "Michael";
+     this.name = '';
      this.phone = 123456789;
-     this.address = "Box 50";
-     this.residence = "Asikuma"
+     this.address = 'Box 50';
+    /* this.residence = "Asikuma"
      this.relation = "brother";
-     this.detail="nothing to display";
+     this.detail="nothing to display";*/
   }
 
   magicNumbers() {
-    return Math.floor(Math.random() * 9999);
+    return Math.floor(Math.random()*9999);
   }
 
   

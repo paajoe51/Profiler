@@ -6,7 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { IonicStorageModule } from '@ionic/storage';
+import {IonicStorageModule} from '@ionic/storage';
 
 import { AllprofilesPage } from '../pages/allprofiles/allprofiles';
 //import { AddprofilePage } from '../pages/addprofile/addprofile';

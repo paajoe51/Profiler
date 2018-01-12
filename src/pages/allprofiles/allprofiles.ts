@@ -31,8 +31,8 @@ export class AllprofilesPage {
   }
 
   allMembers() {
-    this.storage.ready().then(() => {
-      this.storage.forEach((value) => {
+    this.storage.ready().then(() =>{
+      this.storage.forEach((value)=>{
         this.profiles.push(value);
       })
     }).catch();

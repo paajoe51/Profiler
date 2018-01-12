@@ -21,7 +21,7 @@
       <ion-item>
         <ion-label fixed color="basic" >Name: 
         </ion-label>
-        <ion-input  [(ngModel)]="name" type = "text"placeholder="Enter name">
+        <ion-input  [(ngModel)]="name" type="text" placeholder="Enter name">
         </ion-input>
       </ion-item>
     <ion-item>
@@ -33,7 +33,7 @@
     <ion-item>
       <ion-label floating>Postal Adress:
       </ion-label>
-      <ion-input type="text" placeholder="                              P.O Box .....">
+      <ion-input type="text" [(ngModel)]="address" placeholder="                              P.O Box .....">
       </ion-input>
     </ion-item>
     <ion-item>
@@ -83,7 +83,6 @@
 </div>
 <br>
 
-<div class="pic-buttons">
 <button ion-button large>
   <ion-icon name="add-circle" (click)="save()"></ion-icon>
     Add 
@@ -92,6 +91,5 @@
   <ion-icon name="add-circle"></ion-icon>
    All
 </button>
-</div>
 
 </ion-content>
