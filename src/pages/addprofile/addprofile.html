@@ -57,38 +57,22 @@
   </ion-list>
 </div>
 
-<ion-content>
-  <!-- Real floating action button, fixed. It will not scroll with the content -->
-  <ion-fab top right edge>
-    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+<div class="pic-buttons">
+  <ion-fab>
+    <button ion-fab mini><ion-icon name="camera"></ion-icon></button>
     <ion-fab-list>
-      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
-      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
-      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
-      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+      <button ion-button full round>Caputure  <ion-icon name="camera"></ion-icon></button>
+      <button ion-button full round>From File  <ion-icon name="folder"></ion-icon></button>
     </ion-fab-list>
   </ion-fab>
-
-</ion-content>
-
-<div class="pic-buttons">
-  <button ion-button icon-left outline round>
-    <ion-icon name="camera"></ion-icon>
-    Capture
-  </button>
-  <button ion-button icon-left outline round>
-    <ion-icon name="folder" ></ion-icon>
-    Select
-  </button>
 </div>
-<br>
 
 <button ion-button large>
   <ion-icon name="add-circle" (click)="save()"></ion-icon>
     Add 
 </button>
 <button ion-button large icon-right (click)="allProfiles()">
-  <ion-icon name="add-circle"></ion-icon>
+  <ion-icon name="persons"></ion-icon>
    All
 </button>
 

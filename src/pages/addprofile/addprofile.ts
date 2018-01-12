@@ -44,12 +44,12 @@ export class AddprofilePage {
       name: this.name,
       phone: this.phone,
       address: this.address,
-      residence: this.residence,
-      relation: this.relation,
-      detail: this.detail
+      //residence: this.residence,
+      //relation: this.relation,
+      //detail: this.detail
     }
     let id = this.magicNumbers();
-    this.storage.set('sandwich'+id,profiles).then(()=>{
+    this.storage.set('profile'+id,profiles).then(()=>{
       alert("Datasaved");
     }).catch((error)=>{
       console.log(error);
